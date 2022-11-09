@@ -21,3 +21,24 @@ img {
 input[type="submit"] {
     cursor: pointer;
 }
+
+i {
+    background-color: var(--main-calor);
+    color: var(--primary-text-color);
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+/* Cabeçalho e banner  */
+#header {
+    min-height: 90vh;
+    background-image: url("../img/main_banner4.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+    margin-bottom: 2rem;
+    position: relative;
+
+}
+#brand {
+    background-color: var(--main-calor);
+}
