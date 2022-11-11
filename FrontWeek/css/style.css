@@ -451,3 +451,43 @@ margin-bottom: 1rem;
 .phone-info {
     color: var(--secondary-color);
 }
+/*Mobile navbar*/
+#menu, #close-menu {
+    font-size: 2rem;
+    padding: 1rem;
+}
+#close-menu {
+position: absolute;
+top: 0;
+right: 0;
+}
+#mobile-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0 ,0, 0.95);
+    display: flex;
+    flex-direction:column ;
+    padding: 4rem 2rem;
+
+}
+
+
+/* Responsivo */
+@media (max-width:450px){
+    /*geral*/
+    body{
+        overflow-x: hidden;
+    }
+    i {
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+    /* navbar */
+    #navbar{
+        display: none;
+    }
+
+}
