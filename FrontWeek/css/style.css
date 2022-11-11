@@ -441,3 +441,13 @@ margin-bottom: 1rem;
     margin-bottom: 1rem;
     border-bottom: 1px solid var(--secondary-color);
 }
+.phone-number {
+    display: flex;
+    border: 1px solid var(--main-color);
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.phone-info {
+    color: var(--secondary-color);
+}
