@@ -34,8 +34,9 @@ function smoothScroll(e) {
 }
 
 function showSlides() {
+    console.log(slides);
 
-    for(let i = 0; i < showSlides.length; i++){
+    for(let i = 0; i < slides.length; i++){
         slides[i].classList.remove("active");
         dots[i].classList.remove("active");
     }
