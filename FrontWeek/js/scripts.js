@@ -7,10 +7,11 @@ const menu = document.querySelector("#mobile-navbar");
 //Funções
 
 // Eventos
-menuBtn.addEventListener("click", (e) => {
-    menu.classList.add("menu-active");
-})
+[menuBtn, closeMenuBtn].forEach((btn) =>{
+    btn.addEventListener("click",(e) => {
+        menu.classList.toggle("menu-active");
+    });
+});
 
-closeMenuBtn.addEventListener("click", (e) => {
-    menu.classList.remove("menu-active");
-})
+
+
