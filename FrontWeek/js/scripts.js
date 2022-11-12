@@ -7,6 +7,10 @@ const desktopLinks = document.querySelectorAll("#navbar a");
 const mobileLinks = document.querySelectorAll("#mobile-navbar a");
 const allLinks = [...desktopLinks, ...mobileLinks];
 
+const slide = document.querySelectorAll(".banner");
+const dots = document.querySelectorAll(".dot");
+let slideIndex = 0;
+
 
 
 //Funções
@@ -29,6 +33,19 @@ function smoothScroll(e) {
     }, 500)
 }
 
+function showSlides() {
+
+    for(let i = 0; i < showSlides.length; i++){
+        slides[i].classList.remove("active");
+    }
+
+    slideIndex++
+
+    if(slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+}
+
 
 // Eventos
 [menuBtn, closeMenuBtn].forEach((btn) =>{
@@ -40,6 +57,9 @@ function smoothScroll(e) {
 allLinks.forEach((link) => {
     link.addEventListener("click", smoothScroll);
 });
+
+// Inicialização
+showSlides();
 
 
 
